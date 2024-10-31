@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=PE7DL-0ZZ1P-2ZIW4-FR8A6-JVCY2-7U1L4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  D:\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+D:\stm32project\car_reg\car_reg.uvprojx
+Project File Date:  10/24/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\MDK\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling Dri_ADC.c...
+compiling Dri_SPI.c...
+compiling system_stm32f10x.c...
+compiling Int_Encoder.c...
+compiling Int_TB6612.c...
+compiling Dri_I2C.c...
+compiling Dri_USART1.c...
+Dri\Dri_USART1.c(139): warning:  #223-D: function "Driver_USART2_SendString" declared implicitly
+          Driver_USART2_SendString(buff, len);
+Dri\Dri_USART1.c: 1 warning, 0 errors
+compiling core_cm3.c...
+compiling Dri_TIM.c...
+compiling Dri_USART2.c...
+compiling main.c...
+compiling Com_PID.c...
+compiling Com_Filter.c...
+compiling list.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling Int_MPU6050.c...
+Int\Int_MPU6050.c(164): warning:  #223-D: function "for_delay_ms" declared implicitly
+  	for_delay_ms(100);
+Int\Int_MPU6050.c: 1 warning, 0 errors
+compiling App_Car.c...
+App\App_Car.c(71): warning:  #223-D: function "sprintf" declared implicitly
+      sprintf(bat_str,"%3.1f",bat_vol);
+App\App_Car.c(72): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      OLED_ShowString(32,0,bat_str,16,1);
+App\App_Car.c(77): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      OLED_ShowString(24,16,ea_str,16,1); // 前面有EA:三个字符，x=3*8=24开�?;第二行，y=16
+App\App_Car.c(78): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      OLED_ShowString(24, 32, eb_str, 16, 1); // 前面有EB:三个字符，x=3*8=24开�?;第三行，y=32
+App\App_Car.c(82): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      OLED_ShowString(48, 48, angle_str, 16, 1); // 前面有Angle:六个字符，x=6*8=48开�?;第四行，y=48
+App\App_Car.c: 5 warnings, 0 errors
+compiling stream_buffer.c...
+compiling oled.c...
+Int\OLED\oled.c(400): warning:  #223-D: function "for_delay_ms" declared implicitly
+  	for_delay_ms(200);
+Int\OLED\oled.c: 1 warning, 0 errors
+compiling queue.c...
+compiling App_Task.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling tasks.c...
+compiling port.c...
+linking...
+Program Size: Code=16792 RO-data=8128 RW-data=300 ZI-data=18396  
+FromELF: creating hex file...
+".\Objects\car_reg.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil.STM32F1xx_DFP.1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\MDK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

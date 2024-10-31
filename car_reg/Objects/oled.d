@@ -1,0 +1,9 @@
+.\objects\oled.o: Int\OLED\oled.c
+.\objects\oled.o: Int\OLED\oled.h
+.\objects\oled.o: .\Dri\Dri_SPI.h
+.\objects\oled.o: .\Start\stm32f10x.h
+.\objects\oled.o: .\Start\core_cm3.h
+.\objects\oled.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\oled.o: .\Start\system_stm32f10x.h
+.\objects\oled.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\oled.o: Int\OLED\oledfont.h
